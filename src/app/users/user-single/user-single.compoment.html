@@ -1,0 +1,73 @@
+<form method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="id">Patient ID</label>
+            <input type="text " class="form-control " [ngModelOptions]="{standalone: true}" [(ngModel)]="userData.id" placeholder="Last name ">
+        </div>
+        <div class="form-group col-md-3 ">
+            <label for="inputEmail4 ">Last name</label>
+            <input type="text " class="form-control " [ngModelOptions]="{standalone: true}" [(ngModel)]="userData.lastName" placeholder="Last name ">
+        </div>
+
+    </div>
+    <div class="form-row ">
+        <div class="form-group col-md-2 " *ngIf="userData " style="width: 250px ">
+            <div class="form-group ">
+
+                <label for="exampleFormControlFile1">Chọn ảnh</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+        </div>
+        <div class="form-group col-md-3 ">
+            <label for="inputEmail4 ">First Name</label>
+            <input type="text " class="form-control " [(ngModel)]="userData.firstName" [ngModelOptions]="{standalone: true}" placeholder="First Name ">
+        </div>
+        <div class="form-group col-md-2 ">
+            <label for="inputState ">Gender</label>
+            <select id="inputState " class="form-control " [ngModelOptions]="{standalone: true}" [(ngModel)]="userData.gender">
+          <option>Nam</option>
+          <option>Nữ</option>
+        </select>
+        </div>
+    </div>
+    <div class="form-row ">
+        <div class="form-group col-md-3 ">
+            <label for="inputEmail4 ">D.O.B</label>
+            <input type="date" class="form-control " [ngModelOptions]="{standalone: true}" [(ngModel)]="userData.birthdate" placeholder="Patient ID ">
+        </div>
+        <div class="form-group col-md-2 ">
+            <label for="inputEmail4 ">Room</label>
+            <input type="text " class="form-control " [(ngModel)]="userData.room" [ngModelOptions]="{standalone: true}" placeholder="Last name ">
+        </div>
+        <div class="form-group col-md-2 ">
+            <label for="inputEmail4 ">Bed</label>
+            <input type="text " class="form-control " [ngModelOptions]="{standalone: true}" [(ngModel)]="userData.bed" placeholder="Mide ">
+        </div>
+    </div>
+    <div class="form-row ">
+        <div class="form-group col-md-4 ">
+            <label for="exampleFormControlTextarea1 ">Address</label>
+            <textarea class="form-control " [(ngModel)]="userData.address" [ngModelOptions]="{standalone: true}" rows="4 "></textarea>
+        </div>
+        <div class="form-group col-md-3 ">
+            <label for="Phone ">Home Phone</label>
+            <input type="text " class="form-control " [ngModelOptions]="{standalone: true}" [(ngModel)]="userData.homePhone" placeholder="Home Phone ">
+
+            <label for="Phone ">Work Phone</label>
+            <input type="text " class="form-control " [ngModelOptions]="{standalone: true}" [(ngModel)]="userData.workPhone" placeholder="Work Phone ">
+        </div>
+    </div>
+    <div class="form-row ">
+        <div class="form-group col-md-3 ">
+            <label for="inputEmail4 ">Admission Date</label>
+            <input type="date" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="userData.admissionDate" placeholder="Admission Date ">
+        </div>
+
+        <div class="form-group col-md-2 ">
+            <label for="inputEmail4 ">Mobile</label>
+            <input type="text " [(ngModel)]="userData.mobile" [ngModelOptions]="{standalone: true}" class="form-control " id="inputEmail4 ">
+        </div>
+    </div>
+    <button type="submit " class="btn btn-primary" routerLink="/users" (click)="addOneUsers()">Submit</button>
+</form>
+<button type="submit " class="btn btn-primary btn-sm" (click)="editOneUser()">Sửa</button>

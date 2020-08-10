@@ -1,0 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    text-align: center;
+    margin: 70px 0px 0px 300px;
+}
+
+form {
+    margin: 70px 0px 0px 300px;
+    width: 90%;
+}
