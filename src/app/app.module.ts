@@ -17,6 +17,7 @@ import { ReactiveFormsModule,} from '@angular/forms';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
 
+
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
  

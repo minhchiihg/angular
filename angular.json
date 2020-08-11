@@ -52,7 +52,7 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "../my-angular-site/node_modules/bulma/css/bulma.css",
+                            "node_modules/bulma/css/bulma.css",
                             "src/styles.scss"
                         ],
                         "scripts": []

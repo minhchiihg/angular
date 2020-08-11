@@ -1,5 +1,12 @@
-.table {
-    margin: 40px 0px 40px 100px;
-    max-width: 85%;
-    border: 1px solid;
+:host {
+    margin: 20px 0;
+    display: block;
+}
+
+table button:first-child {
+    margin-right: 8px;
+}
+
+.btn-add {
+    margin: 16px 0;
 }

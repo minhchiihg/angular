@@ -1,0 +1,36 @@
+:host {
+    margin: 20px 0;
+    display: block;
+}
+
+h3 {
+    margin-bottom: 24px;
+}
+
+.upload-file {
+    height: 210px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+.inputfile + label * {
+	pointer-events: none;
+}

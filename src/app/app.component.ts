@@ -6,14 +6,30 @@ import { HttpClient } from '@angular/common/http';
   template: `
   <!---Header-->
   <!-- app.component.html -->
+  <section class="wrapper">
+    <app-header></app-header>
+    <!--router-->
+    
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+    
+    <!--footer-->
+    <app-footer></app-footer>
+  </section>
 
-  <app-header></app-header>
-  <!--router-->
-  <!--footer-->
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
   `,
-  styles: []
+  styles: [`
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .content-wrapper {
+      flex-grow: 1;
+    }
+  `]
 })
 export class AppComponent {
   results;

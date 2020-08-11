@@ -1,8 +1,4 @@
 export class Users {
-    static id: any;
-    static index(index: any) {
-      throw new Error("Method not implemented.");
-    } 
     id: number;
     lastName: string;
     firstName: string;
